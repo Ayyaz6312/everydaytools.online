@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Every Day Tools Online – 100+ free online tools including PDF tools, image tools, calculators, converters, SEO tools, developer tools, generators, and more. No signup required.">
+    <meta name="keywords" content="online tools, free tools, PDF merger, PDF compressor, image compressor, password generator, QR code generator, word counter, age calculator, BMI calculator, currency converter, JSON formatter, SEO tools, developer tools, unit converter, GST calculator, EMI calculator">
+    <meta name="author" content="Every Day Tools Online">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://everydaytools.online/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Every Day Tools Online – 100+ Free Online Tools">
+    <meta property="og:description" content="Free online tools for PDF, images, calculators, converters, SEO, development, and more. No signup, no limits.">
+    <meta property="og:url" content="https://everydaytools.online/">
+    <meta property="og:site_name" content="Every Day Tools Online">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Every Day Tools Online – 100+ Free Online Tools">
+    <meta name="twitter:description" content="Free online tools for PDF, images, calculators, converters, SEO, development, and more.">
+
+    <title>Every Day Tools Online – 100+ Free Online Tools | PDF, Image, SEO, Calculators</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232563eb'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='bold' font-size='18' fill='white'>E</text></svg>">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fb;
+            --bg-tertiary: #f1f3f5;
+            --text-primary: #111827;
+            --text-secondary: #4b5563;
+            --text-tertiary: #9ca3af;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --accent-light: #eff6ff;
+            --accent-50: #dbeafe;
+            --border: #e5e7eb;
+            --border-light: #f3f4f6;
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.04);
+            --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.08), 0 8px 10px -6px rgba(0,0,0,0.04);
+            --radius: 12px;
+            --radius-sm: 8px;
+            --radius-lg: 16px;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* === HEADER === */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+            transition: box-shadow 0.3s ease;
+        }
+        .header.scrolled { box-shadow: var(--shadow-md); }
+
+        .header-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+            height: 68px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+        .logo-icon {
+            width: 38px; height: 38px;
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-weight: 800; font-size: 20px;
+            box-shadow: 0 2px 8px rgba(37,99,235,0.3);
+        }
+        .logo-text {
+            font-size: 17px;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+        .logo-text span { color: var(--accent); }
+
+        .nav { display: flex; align-items: center; gap: 4px; }
+        .nav a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: var(--radius-sm);
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        .nav a:hover { color: var(--accent); background: var(--accent-light); }
+        .nav a.active { color: var(--accent); background: var(--accent-light); }
+
+        .nav-ai {
+            display: flex; align-items: center; gap: 6px;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white !important;
+            padding: 8px 18px !important;
+            border-radius: 50px !important;
+            font-weight: 600 !important;
+            font-size: 13px !important;
+            box-shadow: 0 2px 8px rgba(37,99,235,0.3);
+        }
+        .nav-ai:hover { opacity: 0.9; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(37,99,235,0.4); }
+
+        .mobile-toggle {
+            display: none;
+            background: none; border: none; cursor: pointer;
+            padding: 8px; border-radius: var(--radius-sm);
+            color: var(--text-primary);
+        }
+        .mobile-toggle:hover { background: var(--bg-tertiary); }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 68px; left: 0; right: 0; bottom: 0;
+            background: rgba(255,255,255,0.98);
+            backdrop-filter: blur(20px);
+            padding: 24px;
+            z-index: 999;
+            flex-direction: column;
+            gap: 4px;
+            overflow-y: auto;
+        }
+        .mobile-menu.open { display: flex; }
+        .mobile-menu a {
+            text-decoration: none;
+            color: var(--text-primary);
+            font-size: 16px; font-weight: 500;
+            padding: 14px 16px;
+            border-radius: var(--radius-sm);
+            transition: all 0.2s;
+        }
+        .mobile-menu a:hover { background: var(--accent-light); color: var(--accent); }
+
+        /* === HERO === */
+        .hero {
+            background: linear-gradient(180deg, #ffffff 0%, var(--bg-secondary) 100%);
+            padding: 80px 24px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -200px; left: 50%; transform: translateX(-50%);
+            width: 800px; height: 800px;
+            background: radial-gradient(circle, rgba(37,99,235,0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--accent-light);
+            color: var(--accent);
+            font-size: 13px; font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 50px;
+            margin-bottom: 24px;
+            border: 1px solid var(--accent-50);
+        }
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 56px);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            color: var(--text-primary);
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto; margin-right: auto;
+        }
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero p {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 36px;
+            line-height: 1.7;
+        }
+
+        .search-box {
+            max-width: 560px;
+            margin: 0 auto 40px;
+            position: relative;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 16px 20px 16px 52px;
+            border: 2px solid var(--border);
+            border-radius: 50px;
+            font-size: 15px;
+            font-family: inherit;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            outline: none;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-lg);
+        }
+        .search-box input:focus { border-color: var(--accent); box-shadow: var(--shadow-xl), 0 0 0 4px rgba(37,99,235,0.1); }
+        .search-box input::placeholder { color: var(--text-tertiary); }
+        .search-box .search-icon {
+            position: absolute; left: 20px; top: 50%; transform: translateY(-50%);
+            color: var(--text-tertiary); pointer-events: none;
+        }
+
+        .hero-stats {
+            display: flex; justify-content: center; gap: 48px; flex-wrap: wrap;
+        }
+        .hero-stat { text-align: center; }
+        .hero-stat-num { font-size: 28px; font-weight: 800; color: var(--accent); letter-spacing: -0.02em; }
+        .hero-stat-label { font-size: 13px; color: var(--text-tertiary); font-weight: 500; margin-top: 2px; }
+
+        /* === TOOLS SECTION === */
+        .tools-section {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .section-header h2 {
+            font-size: clamp(24px, 3vw, 36px);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 12px;
+        }
+        .section-header p { color: var(--text-secondary); font-size: 16px; max-width: 500px; margin: 0 auto; }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .tool-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .tool-card::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--cat-color, #2563eb), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .tool-card:hover {
+            border-color: var(--cat-color, #2563eb);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-2px);
+        }
+        .tool-card:hover::after { opacity: 1; }
+
+        .tool-icon {
+            width: 44px; height: 44px; min-width: 44px;
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 22px;
+            background: var(--cat-bg, var(--accent-light));
+            color: var(--cat-color, var(--accent));
+        }
+        .tool-info { flex: 1; min-width: 0; }
+        .tool-info h3 {
+            font-size: 15px; font-weight: 600;
+            margin-bottom: 4px; letter-spacing: -0.01em;
+        }
+        .tool-info p { font-size: 13px; color: var(--text-tertiary); line-height: 1.5; }
+        .tool-card:hover .tool-info h3 { color: var(--cat-color, var(--accent)); }
+
+        .tool-arrow {
+            color: var(--text-tertiary);
+            transition: all 0.3s ease;
+            margin-top: 2px;
+            opacity: 0;
+            transform: translateX(-4px);
+        }
+        .tool-card:hover .tool-arrow { opacity: 1; transform: translateX(0); color: var(--cat-color, var(--accent)); }
+
+        .category-title {
+            display: flex; align-items: center; gap: 10px;
+            font-size: 20px; font-weight: 700;
+            margin: 48px 0 20px;
+            letter-spacing: -0.02em;
+        }
+        .category-title:first-of-type { margin-top: 0; }
+        .category-dot {
+            width: 8px; height: 8px; border-radius: 50%;
+            background: var(--cat-color, #2563eb);
+        }
+        .category-count {
+            font-size: 12px; font-weight: 600;
+            color: var(--text-tertiary);
+            background: var(--bg-tertiary);
+            padding: 2px 10px;
+            border-radius: 50px;
+            margin-left: 4px;
+        }
+
+        /* === FEATURES === */
+        .features {
+            background: var(--bg-primary);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 80px 24px;
+        }
+        .features-grid {
+            max-width: 1080px; margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 40px;
+        }
+        .feature { text-align: center; }
+        .feature-icon {
+            width: 56px; height: 56px;
+            margin: 0 auto 16px;
+            background: var(--accent-light);
+            border-radius: 14px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 26px; color: var(--accent);
+        }
+        .feature h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+        .feature p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+
+        /* === FOOTER === */
+        .footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            padding: 64px 24px 0;
+        }
+        .footer-inner {
+            max-width: 1280px; margin: 0 auto;
+        }
+        .footer-top {
+            display: grid;
+            grid-template-columns: 1.5fr repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            padding-bottom: 48px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .footer-brand p { font-size: 14px; line-height: 1.7; margin-top: 16px; color: #94a3b8; max-width: 320px; }
+        .footer-logo { display: flex; align-items: center; gap: 10px; }
+        .footer-logo-icon {
+            width: 34px; height: 34px;
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-weight: 800; font-size: 17px;
+        }
+        .footer-logo-text { font-size: 16px; font-weight: 700; color: #f1f5f9; }
+
+        .footer-col h4 {
+            font-size: 13px; font-weight: 700; color: #f1f5f9;
+            text-transform: uppercase; letter-spacing: 0.08em;
+            margin-bottom: 16px;
+        }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 8px; }
+        .footer-col ul li a {
+            text-decoration: none; color: #94a3b8; font-size: 13px;
+            transition: color 0.2s; display: block;
+        }
+        .footer-col ul li a:hover { color: #60a5fa; }
+
+        .footer-backlinks {
+            padding: 40px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        .footer-backlinks h4 {
+            font-size: 13px; font-weight: 700; color: #f1f5f9;
+            text-transform: uppercase; letter-spacing: 0.08em;
+            margin-bottom: 16px;
+        }
+        .backlinks-grid {
+            display: flex; flex-wrap: wrap; gap: 8px;
+        }
+        .backlink-tag {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 6px 14px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 50px;
+            font-size: 12px; font-weight: 500;
+            color: #94a3b8;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .backlink-tag:hover {
+            background: rgba(37,99,235,0.15);
+            border-color: rgba(37,99,235,0.3);
+            color: #60a5fa;
+        }
+
+        .footer-bottom {
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .footer-bottom p { font-size: 13px; color: #64748b; }
+        .footer-bottom-links { display: flex; gap: 24px; }
+        .footer-bottom-links a {
+            text-decoration: none; color: #64748b; font-size: 13px;
+            transition: color 0.2s;
+        }
+        .footer-bottom-links a:hover { color: #60a5fa; }
+
+        /* === NO RESULTS === */
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            display: none;
+        }
+        .no-results.show { display: block; }
+        .no-results .iconify { font-size: 48px; color: var(--text-tertiary); margin-bottom: 16px; }
+        .no-results h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+        .no-results p { color: var(--text-tertiary); font-size: 14px; }
+
+        /* === SCROLL TO TOP === */
+        .scroll-top {
+            position: fixed; bottom: 24px; right: 24px;
+            width: 44px; height: 44px;
+            background: var(--accent);
+            color: white; border: none; border-radius: 50%;
+            cursor: pointer; font-size: 20px;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 12px rgba(37,99,235,0.4);
+            opacity: 0; transform: translateY(10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        .scroll-top.show { opacity: 1; transform: translateY(0); }
+        .scroll-top:hover { background: var(--accent-hover); transform: translateY(-2px); }
+
+        /* === ANIMATIONS === */
+        .fade-up {
+            opacity: 0; transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            .nav { display: none; }
+            .mobile-toggle { display: flex; }
+            .hero { padding: 48px 20px 40px; }
+            .hero-stats { gap: 32px; }
+            .tools-section { padding: 40px 16px 60px; }
+            .tools-grid { grid-template-columns: 1fr; gap: 12px; }
+            .tool-card { padding: 16px; gap: 12px; }
+            .tool-arrow { display: none; }
+            .features { padding: 48px 20px; }
+            .features-grid { gap: 32px; grid-template-columns: 1fr 1fr; }
+            .footer-top { grid-template-columns: 1fr; gap: 32px; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .category-title { font-size: 17px; }
+        }
+        @media (max-width: 480px) {
+            .features-grid { grid-template-columns: 1fr; }
+            .hero-stats { flex-direction: column; gap: 20px; }
+        }
+
+        /* JSON-LD Structured Data */
+        .sr-only {
+            position: absolute; width: 1px; height: 1px;
+            padding: 0; margin: -1px; overflow: hidden;
+            clip: rect(0,0,0,0); border: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Every Day Tools Online",
+        "url": "https://everydaytools.online/",
+        "description": "100+ free online tools including PDF tools, image tools, calculators, converters, SEO tools, and developer tools.",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://everydaytools.online/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <!-- HEADER -->
+    <header class="header" id="header" role="banner">
+        <div class="header-inner">
+            <a href="/" class="logo" aria-label="Every Day Tools Online Home">
+                <div class="logo-icon">E</div>
+                <div class="logo-text">Every Day Tools <span>Online</span></div>
+            </a>
+
+            <nav class="nav" role="navigation" aria-label="Main Navigation">
+                <a href="/" class="active">Home</a>
+                <a href="#tools">Tools</a>
+                <a href="/blog">Blog</a>
+                <a href="/ai-agent" class="nav-ai">
+                    <span class="iconify" data-icon="lucide:sparkles" data-width="14"></span>
+                    AI Agent
+                </a>
+            </nav>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu" aria-expanded="false">
+                <span class="iconify" data-icon="lucide:menu" data-width="24" id="menuIcon"></span>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile Navigation">
+            <a href="/">Home</a>
+            <a href="#tools" onclick="closeMobile()">Tools</a>
+            <a href="/blog">Blog</a>
+            <a href="/ai-agent">
+                <span class="iconify" data-icon="lucide:sparkles" data-width="14" style="vertical-align:-2px"></span>
+                AI Agent
+            </a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-use">Terms of Use</a>
+            <a href="/contact">Contact</a>
+            <a href="/about-us">About Us</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" role="main">
+        <div class="fade-up">
+            <div class="hero-badge">
+                <span class="iconify" data-icon="lucide:zap" data-width="14"></span>
+                100+ Free Online Tools
+            </div>
+            <h1>Your Daily <span class="gradient-text">Online Tools</span> — Fast, Free & Private</h1>
+            <p>Convert, calculate, generate, and optimize — all in your browser. No signup, no uploads to servers, no limits.</p>
+        </div>
+
+        <div class="search-box fade-up" style="transition-delay:0.1s">
+            <span class="search-icon iconify" data-icon="lucide:search" data-width="18"></span>
+            <input type="text" id="toolSearch" placeholder="Search tools... (e.g., PDF, image, calculator)" aria-label="Search tools">
+        </div>
+
+        <div class="hero-stats fade-up" style="transition-delay:0.2s">
+            <div class="hero-stat">
+                <div class="hero-stat-num" id="toolCount">100+</div>
+                <div class="hero-stat-label">Online Tools</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">15+</div>
+                <div class="hero-stat-label">Categories</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">0</div>
+                <div class="hero-stat-label">Signups Required</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-num">100%</div>
+                <div class="hero-stat-label">Free Forever</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOOLS SECTION -->
+    <section class="tools-section" id="tools">
+        <div class="section-header fade-up">
+            <h2>All Tools</h2>
+            <p>Browse our complete collection of free online tools organized by category</p>
+        </div>
+
+        <div id="toolsContainer"></div>
+        <div class="no-results" id="noResults">
+            <span class="iconify" data-icon="lucide:search-x" data-width="48"></span>
+            <h3>No tools found</h3>
+            <p>Try a different search term or browse the categories below</p>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature fade-up">
+                <div class="feature-icon">
+                    <span class="iconify" data-icon="lucide:shield-check" data-width="24"></span>
+                </div>
+                <h3>100% Private</h3>
+                <p>Your files never leave your browser. All processing happens locally on your device.</p>
+            </div>
+            <div class="feature fade-up" style="transition-delay:0.1s">
+                <div class="feature-icon">
+                    <span class="iconify" data-icon="lucide:rocket" data-width="24"></span>
+                </div>
+                <h3>Lightning Fast</h3>
+                <p>No server round-trips. Instant results with client-side processing technology.</p>
+            </div>
+            <div class="feature fade-up" style="transition-delay:0.2s">
+                <div class="feature-icon">
+                    <span class="iconify" data-icon="lucide:infinity" data-width="24"></span>
+                </div>
+                <h3>No Limits</h3>
+                <p>Use any tool as many times as you want. No daily limits, no file size caps.</p>
+            </div>
+            <div class="feature fade-up" style="transition-delay:0.3s">
+                <div class="feature-icon">
+                    <span class="iconify" data-icon="lucide:smartphone" data-width="24"></span>
+                </div>
+                <h3>Works Everywhere</h3>
+                <p>Fully responsive design. Use on desktop, tablet, or mobile — any modern browser.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-top" id="footerTools"></div>
+
+            <!-- Backlinks Section -->
+            <div class="footer-backlinks">
+                <h4>Our Profiles & Backlinks</h4>
+                <div class="backlinks-grid" id="backlinksGrid"></div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Every Day Tools Online. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="/privacy-policy">Privacy Policy</a>
+                    <a href="/terms-of-use">Terms of Use</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/about-us">About Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <span class="iconify" data-icon="lucide:arrow-up" data-width="20"></span>
+    </button>
+
+<script>
+// ====== TOOL DATA ======
+const toolCategories = [
+    {
+        name: "PDF Tools",
+        color: "#ef4444",
+        bg: "#fef2f2",
+        icon: "lucide:file-text",
+        tools: [
+            { name: "PDF Merger / Merge PDF", desc: "Combine multiple PDF files into one", slug: "merge-pdf" },
+            { name: "Compress PDF", desc: "Reduce PDF file size without quality loss", slug: "compress-pdf" },
+            { name: "PDF to Word Converter", desc: "Convert PDF documents to editable Word files", slug: "pdf-to-word" },
+            { name: "Word to PDF Converter", desc: "Convert Word documents to PDF format", slug: "word-to-pdf" },
+            { name: "JPG to PDF Converter", desc: "Convert JPG images to PDF documents", slug: "jpg-to-pdf" },
+            { name: "Split PDF", desc: "Split a PDF into separate pages or sections", slug: "split-pdf" },
+            { name: "PDF Password Remover", desc: "Remove password protection from PDF files", slug: "pdf-password-remover" },
+            { name: "PDF to JPG Converter", desc: "Convert PDF pages to JPG images", slug: "pdf-to-jpg" },
+            { name: "Image to PDF Converter", desc: "Convert images to PDF documents", slug: "image-to-pdf" }
+        ]
+    },
+    {
+        name: "Image Tools",
+        color: "#f59e0b",
+        bg: "#fffbeb",
+        icon: "lucide:image",
+        tools: [
+            { name: "Image Compressor", desc: "Compress images without losing quality", slug: "compress-image" },
+            { name: "Background Remover", desc: "Remove image backgrounds instantly", slug: "background-remover" },
+            { name: "PNG to JPG Converter", desc: "Convert PNG images to JPG format", slug: "png-to-jpg" },
+            { name: "Image Resizer", desc: "Resize images to any dimension", slug: "image-resizer" }
+        ]
+    },
+    {
+        name: "Text Tools",
+        color: "#8b5cf6",
+        bg: "#f5f3ff",
+        icon: "lucide:type",
+        tools: [
+            { name: "Word Counter", desc: "Count words, characters, sentences & paragraphs", slug: "word-counter" },
+            { name: "Case Converter", desc: "Convert text to uppercase, lowercase & more", slug: "case-converter" },
+            { name: "Text to Speech Converter", desc: "Convert text to spoken audio", slug: "text-to-speech" },
+            { name: "Speech to Text Converter", desc: "Transcribe spoken words to text", slug: "speech-to-text" },
+            { name: "Lorem Ipsum Generator", desc: "Generate placeholder text for designs", slug: "lorem-ipsum-generator" },
+            { name: "Text Diff Checker", desc: "Compare two texts and find differences", slug: "text-diff-checker" },
+            { name: "Word Frequency Counter", desc: "Count frequency of each word in text", slug: "word-frequency-counter" },
+            { name: "Character Counter", desc: "Count characters with and without spaces", slug: "character-counter" },
+            { name: "Typing Speed Test", desc: "Test and improve your typing speed", slug: "typing-speed-test" },
+            { name: "Roman Numeral Converter", desc: "Convert between Roman and Arabic numerals", slug: "roman-numeral-converter" },
+            { name: "Number to Words Converter", desc: "Convert numbers to their word form", slug: "number-to-words" },
+            { name: "Morse Code Translator", desc: "Translate text to Morse code and back", slug: "morse-code-translator" },
+            { name: "HTML to Markdown Converter", desc: "Convert HTML markup to Markdown", slug: "html-to-markdown" },
+            { name: "Markdown to HTML Converter", desc: "Convert Markdown to HTML markup", slug: "markdown-to-html" }
+        ]
+    },
+    {
+        name: "Calculators",
+        color: "#10b981",
+        bg: "#ecfdf5",
+        icon: "lucide:calculator",
+        tools: [
+            { name: "Age Calculator", desc: "Calculate exact age in years, months & days", slug: "age-calculator" },
+            { name: "BMI Calculator", desc: "Calculate Body Mass Index instantly", slug: "bmi-calculator" },
+            { name: "Percentage Calculator", desc: "Calculate percentages, increases & decreases", slug: "percentage-calculator" },
+            { name: "Loan EMI Calculator", desc: "Calculate monthly loan EMI payments", slug: "loan-emi-calculator" },
+            { name: "GST Calculator", desc: "Calculate GST for Indian transactions", slug: "gst-calculator" },
+            { name: "Compound Interest Calculator", desc: "Calculate compound interest on savings", slug: "compound-interest-calculator" },
+            { name: "Simple Interest Calculator", desc: "Calculate simple interest easily", slug: "simple-interest-calculator" },
+            { name: "SIP Calculator", desc: "Calculate returns on SIP investments", slug: "sip-calculator" },
+            { name: "FD Calculator", desc: "Calculate fixed deposit maturity amount", slug: "fd-calculator" },
+            { name: "HRA Calculator", desc: "Calculate HRA exemption for Indian income tax", slug: "hra-calculator" },
+            { name: "Discount Calculator", desc: "Calculate discount amounts and final prices", slug: "discount-calculator" },
+            { name: "Tax Calculator", desc: "Calculate income tax liabilities", slug: "tax-calculator" },
+            { name: "Grade/GPA Calculator", desc: "Calculate your GPA or grade average", slug: "gpa-calculator" },
+            { name: "Fuel Cost Calculator", desc: "Estimate fuel costs for trips", slug: "fuel-cost-calculator" },
+            { name: "Mortgage Calculator", desc: "Calculate monthly mortgage payments", slug: "mortgage-calculator" },
+            { name: "Retirement Calculator", desc: "Plan your retirement savings goals", slug: "retirement-calculator" },
+            { name: "Tip Calculator", desc: "Calculate tips and split bills easily", slug: "tip-calculator" },
+            { name: "Body Fat Calculator", desc: "Estimate your body fat percentage", slug: "body-fat-calculator" },
+            { name: "Ideal Weight Calculator", desc: "Find your ideal weight based on height", slug: "ideal-weight-calculator" },
+            { name: "Water Intake Calculator", desc: "Calculate daily water intake needs", slug: "water-intake-calculator" },
+            { name: "CGPA to Percentage Converter", desc: "Convert CGPA to percentage easily", slug: "cgpa-to-percentage" }
+        ]
+    },
+    {
+        name: "Converter Tools",
+        color: "#06b6d4",
+        bg: "#ecfeff",
+        icon: "lucide:repeat",
+        tools: [
+            { name: "Currency Converter", desc: "Convert between world currencies", slug: "currency-converter" },
+            { name: "Unit Converter", desc: "Convert between units of measurement", slug: "unit-converter" },
+            { name: "Video to MP3 Converter", desc: "Extract audio from video files", slug: "video-to-mp3" },
+            { name: "XML to JSON Converter", desc: "Convert XML data to JSON format", slug: "xml-to-json" },
+            { name: "CSV to JSON Converter", desc: "Convert CSV data to JSON format", slug: "csv-to-json" },
+            { name: "Color Picker / HEX to RGB", desc: "Pick colors and convert between formats", slug: "color-picker" }
+        ]
+    },
+    {
+        name: "Developer Tools",
+        color: "#6366f1",
+        bg: "#eef2ff",
+        icon: "lucide:code-2",
+        tools: [
+            { name: "JSON Formatter", desc: "Format and beautify JSON data", slug: "json-formatter" },
+            { name: "Base64 Encode/Decode", desc: "Encode or decode Base64 strings", slug: "base64-encode-decode" },
+            { name: "MD5 Hash Generator", desc: "Generate MD5 hash from text or files", slug: "md5-hash-generator" },
+            { name: "SHA256 Hash Generator", desc: "Generate SHA256 hash from any input", slug: "sha256-hash-generator" },
+            { name: "UUID Generator", desc: "Generate random UUID/GUID identifiers", slug: "uuid-generator" },
+            { name: "Regex Tester", desc: "Test and debug regular expressions", slug: "regex-tester" },
+            { name: "HTML Minifier", desc: "Minify HTML code to reduce file size", slug: "html-minifier" },
+            { name: "CSS Minifier", desc: "Minify CSS code for faster loading", slug: "css-minifier" },
+            { name: "JavaScript Minifier", desc: "Minify JavaScript code efficiently", slug: "javascript-minifier" }
+        ]
+    },
+    {
+        name: "SEO Tools",
+        color: "#f97316",
+        bg: "#fff7ed",
+        icon: "lucide:search",
+        tools: [
+            { name: "Meta Tag Generator", desc: "Generate SEO meta tags for web pages", slug: "meta-tag-generator" },
+            { name: "Sitemap Generator", desc: "Generate XML sitemaps for websites", slug: "sitemap-generator" },
+            { name: "Robots.txt Generator", desc: "Create robots.txt files easily", slug: "robots-txt-generator" },
+            { name: "Domain Age Checker", desc: "Check the age of any domain", slug: "domain-age-checker" },
+            { name: "WHOIS Lookup", desc: "Lookup WHOIS information for domains", slug: "whois-lookup" },
+            { name: "DNS Lookup", desc: "Query DNS records for any domain", slug: "dns-lookup" },
+            { name: "IP Address Finder", desc: "Find your public IP address", slug: "ip-address-finder" },
+            { name: "Favicon Generator", desc: "Generate favicons from images", slug: "favicon-generator" }
+        ]
+    },
+    {
+        name: "Generator Tools",
+        color: "#ec4899",
+        bg: "#fdf2f8",
+        icon: "lucide:wand-2",
+        tools: [
+            { name: "Password Generator", desc: "Generate strong, secure passwords", slug: "password-generator" },
+            { name: "QR Code Generator", desc: "Create QR codes for any URL or text", slug: "qr-code-generator" },
+            { name: "Invoice Generator", desc: "Create professional invoices online", slug: "invoice-generator" },
+            { name: "Resume Builder", desc: "Build a professional resume for free", slug: "resume-builder" },
+            { name: "Barcode Generator", desc: "Generate barcodes in various formats", slug: "barcode-generator" },
+            { name: "CSS Gradient Generator", desc: "Create beautiful CSS gradients visually", slug: "css-gradient-generator" },
+            { name: "Box Shadow Generator", desc: "Design CSS box shadows with preview", slug: "box-shadow-generator" },
+            { name: "Random Number Generator", desc: "Generate random numbers in any range", slug: "random-number-generator" },
+            { name: "Fibonacci Sequence Generator", desc: "Generate Fibonacci number sequences", slug: "fibonacci-generator" },
+            { name: "Dice Roller / Coin Flip", desc: "Roll dice or flip a coin online", slug: "dice-roller-coin-flip" }
+        ]
+    },
+    {
+        name: "Date & Time Tools",
+        color: "#14b8a6",
+        bg: "#f0fdfa",
+        icon: "lucide:calendar",
+        tools: [
+            { name: "Date Difference Calculator", desc: "Calculate the difference between two dates", slug: "date-difference-calculator" },
+            { name: "Time Zone Converter", desc: "Convert times between time zones", slug: "time-zone-converter" }
+        ]
+    },
+    {
+        name: "Math Tools",
+        color: "#a855f7",
+        bg: "#faf5ff",
+        icon: "lucide:sigma",
+        tools: [
+            { name: "Prime Number Checker", desc: "Check if a number is prime", slug: "prime-number-checker" },
+            { name: "Palindrome Checker", desc: "Check if text or numbers are palindromes", slug: "palindrome-checker" }
+        ]
+    },
+    {
+        name: "Social Media Tools",
+        color: "#e11d48",
+        bg: "#fff1f2",
+        icon: "lucide:share-2",
+        tools: [
+            { name: "YouTube Thumbnail Downloader", desc: "Download YouTube video thumbnails", slug: "youtube-thumbnail-downloader" },
+            { name: "Instagram Post Size Checker", desc: "Check optimal Instagram post dimensions", slug: "instagram-post-size-checker" }
+        ]
+    },
+    {
+        name: "Validator Tools",
+        color: "#0891b2",
+        bg: "#ecfeff",
+        icon: "lucide:check-circle",
+        tools: [
+            { name: "Credit Card Validator", desc: "Validate credit card numbers (Luhn check)", slug: "credit-card-validator" },
+            { name: "Email Validator", desc: "Validate email addresses and check format", slug: "email-validator" },
+            { name: "Phone Number Formatter", desc: "Format phone numbers to standard formats", slug: "phone-number-formatter" }
+        ]
+    }
+];
+
+// ====== BACKLINK DATA ======
+const backlinks = [
+    { name: "GitHub.com", url: "https://github.com/", icon: "lucide:github" },
+    { name: "LinkedIn.com", url: "https://www.linkedin.com/", icon: "lucide:linkedin" },
+    { name: "Reddit.com", url: "https://www.reddit.com/", icon: "lucide:message-circle" },
+    { name: "Gravatar.com", url: "https://gravatar.com/", icon: "lucide:user-circle" },
+    { name: "About.me", url: "https://about.me/", icon: "lucide:user" },
+    { name: "Behance.net", url: "https://www.behance.net/", icon: "lucide:palette" },
+    { name: "Crunchbase.com", url: "https://www.crunchbase.com/", icon: "lucide:building-2" },
+    { name: "SoundCloud.com", url: "https://soundcloud.com/", icon: "lucide:music" },
+    { name: "Scribd.com", url: "https://www.scribd.com/", icon: "lucide:book-open" },
+    { name: "Pinterest.com", url: "https://www.pinterest.com/", icon: "lucide:pin" },
+    { name: "Disqus.com", url: "https://disqus.com/", icon: "lucide:message-square" },
+    { name: "Issuu.com", url: "https://issuu.com/", icon: "lucide:file-text" },
+    { name: "Quora.com", url: "https://www.quora.com/", icon: "lucide:help-circle" },
+    { name: "Foursquare.com", url: "https://foursquare.com/", icon: "lucide:map-pin" },
+    { name: "SlideShare.net", url: "https://www.slideshare.net/", icon: "lucide:presentation" },
+    { name: "Flickr.com", url: "https://www.flickr.com/", icon: "lucide:camera" },
+    { name: "ProductHunt.com", url: "https://www.producthunt.com/", icon: "lucide:rocket" }
+];
+
+// ====== RENDER TOOLS ======
+function renderTools(filter = '') {
+    const container = document.getElementById('toolsContainer');
+    const noResults = document.getElementById('noResults');
+    container.innerHTML = '';
+    let totalVisible = 0;
+    const lowerFilter = filter.toLowerCase().trim();
+
+    toolCategories.forEach((cat, catIdx) => {
+        const filteredTools = cat.tools.filter(t =>
+            !lowerFilter ||
+            t.name.toLowerCase().includes(lowerFilter) ||
+            t.desc.toLowerCase().includes(lowerFilter) ||
+            cat.name.toLowerCase().includes(lowerFilter)
+        );
+
+        if (filteredTools.length === 0) return;
+        totalVisible += filteredTools.length;
+
+        const catSection = document.createElement('div');
+        catSection.style.cssText = `--cat-color:${cat.color};--cat-bg:${cat.bg};`;
+
+        let html = `<div class="category-title fade-up">
+            <span class="category-dot"></span>
+            ${cat.name}
+            <span class="category-count">${filteredTools.length} tool${filteredTools.length > 1 ? 's' : ''}</span>
+        </div>
+        <div class="tools-grid">`;
+
+        filteredTools.forEach((tool, i) => {
+            html += `<a href="/${tool.slug}" class="tool-card fade-up" style="transition-delay:${Math.min(i * 0.03, 0.3)}s">
+                <div class="tool-icon">
+                    <span class="iconify" data-icon="${cat.icon}" data-width="20"></span>
+                </div>
+                <div class="tool-info">
+                    <h3>${highlightMatch(tool.name, lowerFilter)}</h3>
+                    <p>${tool.desc}</p>
+                </div>
+                <span class="tool-arrow iconify" data-icon="lucide:arrow-right" data-width="16"></span>
+            </a>`;
+        });
+
+        html += '</div>';
+        catSection.innerHTML = html;
+        container.appendChild(catSection);
+    });
+
+    noResults.classList.toggle('show', totalVisible === 0);
+
+    // Re-observe new elements
+    document.querySelectorAll('.fade-up:not(.visible)').forEach(el => observer.observe(el));
+}
+
+function highlightMatch(text, query) {
+    if (!query) return text;
+    const regex = new RegExp(`(${query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+    return text.replace(regex, '<mark style="background:#fef08a;border-radius:2px;padding:0 2px">$1</mark>');
+}
+
+// ====== RENDER FOOTER TOOLS ======
+function renderFooterTools() {
+    const container = document.getElementById('footerTools');
+
+    // Brand column
+    let html = `<div class="footer-brand">
+        <div class="footer-logo">
+            <div class="footer-logo-icon">E</div>
+            <div class="footer-logo-text">Every Day Tools Online</div>
+        </div>
+        <p>100+ free online tools for everyday tasks. No signup, no server uploads — everything runs in your browser for maximum privacy and speed.</p>
+    </div>`;
+
+    // Split tools into columns (max ~20 links per column)
+    const allTools = [];
+    toolCategories.forEach(cat => {
+        cat.tools.forEach(t => allTools.push({ ...t, catColor: cat.color, catName: cat.name }));
+    });
+
+    const chunkSize = 22;
+    const chunks = [];
+    for (let i = 0; i < allTools.length; i += chunkSize) {
+        chunks.push(allTools.slice(i, i + chunkSize));
+    }
+
+    chunks.forEach((chunk, idx) => {
+        html += `<div class="footer-col"><h4>Tools ${idx > 0 ? idx + 1 : ''}</h4><ul>`;
+        chunk.forEach(t => {
+            html += `<li><a href="/${t.slug}">${t.name}</a></li>`;
+        });
+        html += '</ul></div>';
+    });
+
+    container.innerHTML = html;
+}
+
+// ====== RENDER BACKLINKS ======
+function renderBacklinks() {
+    const container = document.getElementById('backlinksGrid');
+    container.innerHTML = backlinks.map(bl =>
+        `<a href="${bl.url}" target="_blank" rel="noopener noreferrer" class="backlink-tag">
+            <span class="iconify" data-icon="${bl.icon}" data-width="12"></span>
+            ${bl.name}
+        </a>`
+    ).join('');
+}
+
+// ====== SEARCH ======
+let searchTimeout;
+document.getElementById('toolSearch').addEventListener('input', (e) => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => renderTools(e.target.value), 200);
+});
+
+// ====== HEADER SCROLL ======
+window.addEventListener('scroll', () => {
+    document.getElementById('header').classList.toggle('scrolled', window.scrollY > 10);
+    document.getElementById('scrollTop').classList.toggle('show', window.scrollY > 400);
+});
+
+// ====== SCROLL TO TOP ======
+document.getElementById('scrollTop').addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// ====== MOBILE MENU ======
+const mobileToggle = document.getElementById('mobileToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+const menuIcon = document.getElementById('menuIcon');
+
+mobileToggle.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    mobileToggle.setAttribute('aria-expanded', isOpen);
+    menuIcon.setAttribute('data-icon', isOpen ? 'lucide:x' : 'lucide:menu');
+});
+function closeMobile() {
+    mobileMenu.classList.remove('open');
+    mobileToggle.setAttribute('aria-expanded', 'false');
+    menuIcon.setAttribute('data-icon', 'lucide:menu');
+}
+
+// ====== INTERSECTION OBSERVER ======
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+// ====== INIT ======
+document.addEventListener('DOMContentLoaded', () => {
+    renderTools();
+    renderFooterTools();
+    renderBacklinks();
+
+    // Update tool count
+    const total = toolCategories.reduce((sum, cat) => sum + cat.tools.length, 0);
+    document.getElementById('toolCount').textContent = total + '+';
+
+    // Observe initial elements
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+});
+</script>
+
+</body>
+</html>
