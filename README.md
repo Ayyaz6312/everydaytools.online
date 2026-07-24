@@ -1,2 +1,2 @@
-# aitoolshouse.online 
-aitoolshouse.online a ai platforms 
+# everydaytools.online
+everydaytools.online a best platforms 
