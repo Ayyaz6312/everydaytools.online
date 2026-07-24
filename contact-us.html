@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | ToolGalaxy.online – 100+ Free Online Tools</title>
+<meta name="description" content="Get in touch with the ToolGalaxy.online team for support, feedback, tool requests, or advertising and partnership inquiries.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://toolgalaxy.online/contact">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F6F7FA; --surface:#FFFFFF; --text:#12151C; --muted:#5B6472;
+    --accent:#2F6FED; --accent-2:#16A38A; --border:#E3E6EB; --code-bg:#EEF1F6;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+  .nav{position:sticky;top:0;z-index:50;background:rgba(246,247,250,0.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);}
+  .nav-inner{max-width:920px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+  .logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.05rem;color:var(--text);display:flex;align-items:center;gap:8px;}
+  .logo-grid{width:18px;height:18px;flex:none;}
+  .logo-img{height:34px;width:auto;display:block;}
+  .nav-links{display:flex;gap:20px;font-size:0.92rem;}
+  .nav-links a{color:var(--muted);font-weight:500;}
+  .nav-links a.current{color:var(--accent);}
+  main{max-width:760px;margin:0 auto;padding:56px 24px 96px;}
+  .eyebrow{font-family:'JetBrains Mono',monospace;font-size:0.78rem;letter-spacing:0.06em;color:var(--accent-2);text-transform:uppercase;margin:0 0 14px;}
+  h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(1.9rem,4vw,2.6rem);line-height:1.15;margin:0 0 16px;}
+  .lede{font-size:1.08rem;color:var(--muted);margin:0 0 40px;max-width:56ch;}
+
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:44px;}
+  .contact-card{
+    background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;
+  }
+  .contact-card .spec-label{font-family:'JetBrains Mono',monospace;font-size:0.68rem;letter-spacing:0.05em;color:var(--muted);text-transform:uppercase;display:block;margin-bottom:8px;}
+  .contact-card h3{font-family:'Space Grotesk',sans-serif;font-size:1.05rem;margin:0 0 6px;}
+  .contact-card p{margin:0 0 10px;color:var(--muted);font-size:0.93rem;}
+  .contact-card a.value{font-family:'Space Grotesk',sans-serif;font-weight:600;color:var(--text);font-size:0.98rem;}
+  .contact-card a.value:hover{color:var(--accent);}
+
+  h2{font-family:'Space Grotesk',sans-serif;font-size:1.3rem;font-weight:600;margin:0 0 18px;}
+
+  form{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:28px;margin-bottom:44px;}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+  label{display:block;font-family:'JetBrains Mono',monospace;font-size:0.7rem;letter-spacing:0.05em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
+  input, textarea, select{
+    width:100%;padding:11px 13px;border:1px solid var(--border);border-radius:8px;
+    font-family:'Inter',sans-serif;font-size:0.96rem;background:var(--bg);color:var(--text);
+  }
+  textarea{resize:vertical;min-height:120px;}
+  .field{margin-bottom:16px;}
+  button.submit{
+    font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:0.98rem;
+    background:var(--accent);color:#fff;border:none;border-radius:8px;
+    padding:13px 26px;cursor:pointer;transition:opacity 0.15s ease;
+  }
+  button.submit:hover{opacity:0.9;}
+  .form-note{font-size:0.85rem;color:var(--muted);margin-top:14px;}
+
+  .faq-item{border-bottom:1px solid var(--border);padding:18px 0;}
+  .faq-item:last-child{border-bottom:none;}
+  .faq-item h3{font-family:'Space Grotesk',sans-serif;font-size:1.02rem;margin:0 0 8px;}
+  .faq-item p{margin:0;color:var(--muted);font-size:0.94rem;}
+
+  footer{border-top:1px solid var(--border);margin-top:40px;padding:32px 24px 48px;}
+  .footer-inner{max-width:920px;margin:0 auto;}
+  .footer-links{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:14px;font-size:0.9rem;}
+  .footer-links a{color:var(--muted);}
+  .footer-note{color:var(--muted);font-size:0.82rem;}
+
+  @media(max-width:640px){
+    .grid{grid-template-columns:1fr;}
+    .form-row{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="https://toolgalaxy.online/">
+      <img src="logo.png" alt="ToolGalaxy.online" class="logo-img">
+    </a>
+    <div class="nav-links">
+      <a href="https://toolgalaxy.online/about-us">About</a>
+      <a href="https://toolgalaxy.online/privacy-policy">Privacy</a>
+      <a href="https://toolgalaxy.online/terms-of-use">Terms</a>
+      <a class="current" href="https://toolgalaxy.online/contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <p class="eyebrow">Get in touch</p>
+  <h1>Contact Us</h1>
+  <p class="lede">Found a bug, have a tool request, or want to talk advertising? Reach out below — we read every message and typically reply within 1–2 business days.</p>
+
+  <div class="grid">
+    <div class="contact-card">
+      <span class="spec-label">General &amp; support</span>
+      <h3>Questions or bug reports</h3>
+      <p>For anything related to using a tool, unexpected results, or account-free access.</p>
+      <a class="value" href="mailto:support@toolgalaxy.online">support@toolgalaxy.online</a>
+    </div>
+    <div class="contact-card">
+      <span class="spec-label">Advertising &amp; partnerships</span>
+      <h3>Work with us</h3>
+      <p>Sponsorship, advertising, or partnership inquiries related to the Site.</p>
+      <a class="value" href="mailto:ads@toolgalaxy.online">ads@toolgalaxy.online</a>
+    </div>
+    <div class="contact-card">
+      <span class="spec-label">Tool requests</span>
+      <h3>Suggest a new tool</h3>
+      <p>Tell us which tool is missing from our 100+ collection and we'll consider it.</p>
+      <a class="value" href="mailto:ideas@toolgalaxy.online">ideas@toolgalaxy.online</a>
+    </div>
+    <div class="contact-card">
+      <span class="spec-label">Legal &amp; privacy</span>
+      <h3>Privacy or legal matters</h3>
+      <p>Data requests, takedown notices, or questions about our policies.</p>
+      <a class="value" href="mailto:legal@toolgalaxy.online">legal@toolgalaxy.online</a>
+    </div>
+  </div>
+
+  <h2>Send us a message</h2>
+  <form onsubmit="event.preventDefault(); alert('Thanks! This is a demo form — connect it to your backend or a form service like Formspree to receive submissions.');">
+    <div class="form-row">
+      <div class="field">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+    </div>
+    <div class="field">
+      <label for="topic">Topic</label>
+      <select id="topic" name="topic">
+        <option>General support</option>
+        <option>Bug report</option>
+        <option>Advertising / partnership</option>
+        <option>Tool request</option>
+        <option>Privacy / legal</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+    </div>
+    <button type="submit" class="submit">Send message</button>
+    <p class="form-note">This form doesn't send email on its own — wire the <code>onsubmit</code> handler up to your backend, or a service such as Formspree, Netlify Forms, or your own API endpoint.</p>
+  </form>
+
+  <h2>Frequently asked</h2>
+  <div class="faq-item">
+    <h3>How fast will I get a reply?</h3>
+    <p>We aim to respond within 1–2 business days. Advertising and partnership inquiries may take a little longer.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Do you offer phone support?</h3>
+    <p>Not currently — email is the fastest way to reach the team behind ToolGalaxy.online.</p>
+  </div>
+  <div class="faq-item">
+    <h3>I found incorrect results from a tool. What should I do?</h3>
+    <p>Email us at support@toolgalaxy.online with the tool name, your input, and the result you got — screenshots help a lot.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://toolgalaxy.online/">Home</a>
+      <a href="https://toolgalaxy.online/about-us">About Us</a>
+      <a href="https://toolgalaxy.online/privacy-policy">Privacy Policy</a>
+      <a href="https://toolgalaxy.online/terms-of-use">Terms of Use</a>
+      <a href="https://toolgalaxy.online/contact">Contact</a>
+    </div>
+    <p class="footer-note">© 2026 ToolGalaxy.online. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
